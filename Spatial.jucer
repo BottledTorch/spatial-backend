@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Xr4GnN" name="Spatial" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              headerPath="$(SourceDir)Dependencies/plibsys/include">
+  <MAINGROUP id="ED2MJe" name="Spatial">
+    <GROUP id="{C66088FD-DC48-010B-0DBA-515D08A3D57A}" name="Source">
+      <FILE id="PJGSHg" name="TracktionCommands.cpp" compile="1" resource="0"
+            file="Source/TracktionCommands.cpp"/>
+      <FILE id="kSlnsi" name="TracktionCommands.h" compile="0" resource="0"
+            file="Source/TracktionCommands.h"/>
+      <FILE id="NsrdpC" name="MessageHandler.cpp" compile="1" resource="0"
+            file="Source/MessageHandler.cpp"/>
+      <FILE id="ITYNpO" name="MessageHandler.h" compile="0" resource="0"
+            file="Source/MessageHandler.h"/>
+      <FILE id="pu33pP" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="cKUcwa" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="Kcq910" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="tracktion_core" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="tracktion_engine" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="tracktion_graph" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" externalLibraries="$(SolutionDir)Dependencies/plibsys/lib/plibsys.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SpatialDebug" extraCompilerFlags="/bigobj"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NewProject"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="tracktion_engine" path="../../../Tracktion_engine/tracktion_engine/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="juce_osc" path="../../../Tracktion_engine/tracktion_engine/modules/juce/modules"/>
+        <MODULEPATH id="tracktion_graph" path="../../../Tracktion_engine/tracktion_engine/modules"/>
+        <MODULEPATH id="tracktion_core" path="../../../Tracktion_engine/tracktion_engine/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
